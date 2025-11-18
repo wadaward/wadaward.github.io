@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ตะกร้าสินค้า</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+</head>
+
+<body onload="loadCart()">
+
+<div class="navbar">
+    <div>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="contact.html">ติดต่อ</a>
+        <a href="cart.html">ตะกร้าสินค้า</a>
+        <a href="user.html">ผู้ใช้</a>
+    </div>
+    <div>
+        <a href="login.html">ลงชื่อเข้าใช้</a>
+        <a href="register.html">ลงทะเบียน</a>
+        <a href="logout.html">ลงชื่ออก</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>ตะกร้าสินค้า</h1>
+
+    <div id="cart-items"></div>
+
+    <h2>ยอดรวม: <span id="total">0 บาท</span></h2>
+
+    <button class="btn" onclick="checkoutCart()" style="background:#0058A3;color:white;margin-top:15px;">ชำระเงิน</button>
+</div>
+
+<footer>© 2025 Furniture Store</footer>
+
+</body>
+</html>

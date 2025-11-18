@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js"></script>
+</head>
+
+<body>
+
+<div class="navbar">
+    <div>
+        <a href="index.html">หน้าแรก</a>
+        <a href="products.html">สินค้า</a>
+        <a href="contact.html">ติดต่อ</a>
+        <a href="cart.html">ตะกร้าสินค้า</a>
+        <a href="user.html">ผู้ใช้</a>
+    </div>
+    <div>
+        <a href="login.html">ลงชื่อเข้าใช้</a>
+        <a href="register.html">ลงทะเบียน</a>
+        <a href="logout.html">ลงชื่ออก</a>
+    </div>
+</div>
+
+<div class="container">
+    <h1>สินค้า</h1>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="ค้นหาสินค้า..." onkeyup="searchProducts()">
+    </div>
+
+    <div class="product-grid">
+        <div class="product">
+            <img src="img/sofa.jpg">
+            <h3>โซฟา</h3>
+            <p>ราคา: 5,990 บาท</p>
+            <button class="btn" onclick="addToCart(1,'โซฟา',5990,'img/sofa.jpg')">เพิ่มลงตะกร้า</button>
+        </div>
+
+        <div class="product">
+            <img src="img/chair.jpg">
+            <h3>เก้าอี้</h3>
+            <p>ราคา: 990 บาท</p>
+            <button class="btn" onclick="addToCart(2,'เก้าอี้',990,'img/chair.jpg')">เพิ่มลงตะกร้า</button>
+        </div>
+
+        <div class="product">
+            <img src="img/table.jpg">
+            <h3>โต๊ะทานอาหาร</h3>
+            <p>ราคา: 3,500 บาท</p>
+            <button class="btn" onclick="addToCart(3,'โต๊ะ',3500,'img/table.jpg')">เพิ่มลงตะกร้า</button>
+        </div>
+
+        <div class="product">
+            <img src="img/bed.jpg">
+            <h3>เตียง</h3>
+            <p>ราคา: 8,990 บาท</p>
+            <button class="btn" onclick="addToCart(4,'เตียง',8990,'img/bed.jpg')">เพิ่มลงตะกร้า</button>
+        </div>
+</div>
+
+</div>
+
+<footer>© 2025 Furniture Store</footer>
+</body>
+</html>
